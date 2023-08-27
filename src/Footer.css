@@ -1,0 +1,32 @@
+.main-footer {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background-color: #edefee;
+  padding: 4rem 0;
+}
+
+.main-footer a {
+  align-self: center;
+}
+
+.footer-navigation h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #495e57;
+}
+
+.footer-navigation ul {
+  list-style-type: none;
+  padding-top: 0.5rem;
+}
+
+.footer-navigation a {
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+.main-navigation ul {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.main-navigation a {
+  font-family: "Karla", sans-serif;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}

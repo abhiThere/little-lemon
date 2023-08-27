@@ -1,34 +1,94 @@
-import Nav from "./Nav";
-import Logo from "./logo.png";
+import Logo from "./images/logo.svg";
+
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <img src={Logo} alt="Little Lemon Logo" />
-      <section>
-        <h3>Doormat Navigation</h3>
-        <Nav />
+    <footer className="main-footer">
+      <a href="/">
+        <img className="app-logo" src={Logo} alt="Little Lemon Logo" />
+      </a>
+      <section className="footer-navigation">
+        <h1>Doormat Navigation</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/menu">Menu</a>
+            </li>
+            <li>
+              <a href="/reservations">Reservations</a>
+            </li>
+            <li>
+              <a href="/order-online">Order Online</a>
+            </li>
+            <li>
+              <a href="/login">Login</a>
+            </li>
+          </ul>
+        </nav>
       </section>
-
-      <section>
-        <h3>Contact</h3>
+      <section className="footer-navigation">
+        <h1>Contact</h1>
         <address>
           <ul>
-            <li>Address</li>
-            <li>Phone Number</li>
-            <li>Email</li>
+            <li>
+              <a href="https://goo.gl/maps/fuYL4VJKbDpdwzXWA">
+                1132 W Albert Street,
+                <br />
+                Chicago, USA
+              </a>
+            </li>
+            <li>
+              <a href="tel:+13107492683">(310) 749-2683</a>
+            </li>
+            <li>
+              <a href="mailto:little@lemon.com">little@lemon.com</a>
+            </li>
           </ul>
         </address>
       </section>
-
-      <section>
-        <h3>Social Media Links</h3>
+      <section className="footer-navigation">
+        <h1>Social Media Links</h1>
         <address>
           <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>LinkedIn</li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" rel="noreferrer" target="_blank">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
           </ul>
         </address>
       </section>

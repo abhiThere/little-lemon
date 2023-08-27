@@ -1,6 +1,8 @@
+import "./Nav.css";
+
 const Nav = () => {
   return (
-    <nav>
+    <nav className="main-navigation">
       <ul>
         <li>
           <a href="/">Home</a>
