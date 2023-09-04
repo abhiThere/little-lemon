@@ -1,0 +1,58 @@
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 1rem 0;
+  height: 18rem;
+  background-color: #495e57;
+}
+
+.cta-content {
+  width: 18rem;
+  border-radius: 16px;
+  color: white;
+}
+
+.cta-content h1 {
+  font-family: "Markazi Text", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 0.95;
+  color: #f4ce14;
+}
+
+.cta-content h2 {
+  font-family: "Markazi Text", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 0.65;
+}
+
+.cta-content p {
+  font-family: "Karla", sans-serif;
+  margin: 1rem 0;
+}
+
+.cta-img {
+  width: 270px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.cta-btn {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+  background-color: #f4ce14;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.cta-btn:hover {
+  background-color: #f0f414;
+}

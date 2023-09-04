@@ -9,8 +9,3 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-.app-logo {
-  cursor: pointer;
-  width: 140px;
-}
