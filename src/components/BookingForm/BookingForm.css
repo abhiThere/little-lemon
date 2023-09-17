@@ -1,0 +1,23 @@
+.booking-form {
+  color: white;
+  background-color: #495e57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.booking-form header {
+  width: 200px;
+}
+
+.booking-form h1 {
+  color: #f4ce14;
+}
+
+.booking-form form {
+  display: grid;
+  width: 200px;
+  max-width: 200px;
+  gap: 20px;
+}
