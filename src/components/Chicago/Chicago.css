@@ -26,6 +26,10 @@
   padding: 1.5rem 0;
 }
 
+.chicago main p:last-child{
+  margin-top: 1rem;
+}
+
 .mario-adrian-1 {
   width: 12rem;
   height: 16rem;

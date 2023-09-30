@@ -1,4 +1,6 @@
 .booking-form {
+  font-family: "Karla", sans-serif;
+  height: 90vh;
   color: white;
   background-color: #495e57;
   display: flex;
@@ -8,16 +10,106 @@
 }
 
 .booking-form header {
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 260px;
+  margin-bottom: 2rem;
 }
 
 .booking-form h1 {
+  font-size: 1.5rem;
   color: #f4ce14;
+}
+
+.booking-form header p:last-child {
+  width: max-content;
+  font-size: 1.25rem;
+}
+
+.booking-form main {
+  height: 100%;
 }
 
 .booking-form form {
   display: grid;
-  width: 200px;
-  max-width: 200px;
+  align-content: space-evenly;
+  width: 260px;
+  max-width: 260px;
+  height: 95%;
   gap: 20px;
+}
+
+.form-field input,
+.form-field select {
+  font-family: "Karla", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.form-field input{
+  padding-left: 0.5rem;
+}
+
+.form-field select{
+  padding-left: 0.25rem;
+}
+
+.form-field input:invalid {
+  border: 2px solid red;
+  background-color: #ffe5b4;
+}
+
+.form-field input:invalid:focus-visible {
+  outline-color: red;
+}
+
+.required-fields {
+  font-size: 0.9rem;
+}
+
+.required-fields > span {
+  color: red;
+}
+
+.asterisk {
+  color: red;
+  padding-left: 2px;
+}
+
+.form-field .error {
+  width: max-content;
+  padding-top: 5px;
+  font-size: 0.9rem;
+  color: orangered;
+}
+
+#submit-btn {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #f4ce14;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#submit-btn:hover {
+  background-color: #f0f414;
+}
+
+#submit-btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.main-footer {
+  padding: 2rem 0;
 }

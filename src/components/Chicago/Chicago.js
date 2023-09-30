@@ -16,7 +16,6 @@ const Chicago = () => {
             Little Lemon is a charming neighbourhood bistro that serves simple
             food and classic cocktails in a lively but casual environment.
           </p>
-          <br />
           <p>
             The restaurant features a locally-sourced menu with daily specials.
           </p>
@@ -31,7 +30,7 @@ const Chicago = () => {
         <img
           className="mario-adrian-2"
           src={MarioAdrian2}
-          alt="Mario and Adrian happy about their recipe"
+          alt="Mario and Adrian happy about their dish"
         />
       </section>
     </section>

@@ -3,25 +3,31 @@ import Bruschetta from "../../assets/images/bruschetta.jpg";
 import LemonDessert from "../../assets/images/lemon-dessert.jpg";
 import DeliveryScooter from "../../assets/icons/delivery-scooter.svg";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./Specials.css";
 
 const Specials = () => {
+  const navigate = useNavigate();
+
+  const handleOnlineMenu = () => navigate("/menu");
+
   return (
     <section className="specials">
       <header>
-        <h1>This weeks specials!</h1>
-        <button className="cta-btn">Online Menu</button>
+        <h1>This week's specials!</h1>
+        <button className="cta-btn" aria-label="On Click" onClick={handleOnlineMenu}>
+          Online Menu
+        </button>
       </header>
       <main className="week-specials">
         <article>
           <header>
             <img src={GreekSalad} alt="Greek Salad" />
-            <div className="week-specials-title">
+            <section className="week-specials-title">
               <h1>Greek Salad</h1>
               <span>$ 12.99</span>
-            </div>
+            </section>
           </header>
           <main className="week-specials-description">
             <p>
@@ -31,7 +37,7 @@ const Specials = () => {
             </p>
           </main>
           <footer className="order-for-delivery">
-            <Link to="/order-online">
+            <Link to="/order-online" aria-label="On Click">
               Order a delivery
               <img src={DeliveryScooter} alt="Delivery Scooter" />
             </Link>
@@ -40,10 +46,10 @@ const Specials = () => {
         <article>
           <header>
             <img src={Bruschetta} alt="Bruschetta" />
-            <div className="week-specials-title">
+            <section className="week-specials-title">
               <h1>Bruschetta</h1>
               <span>$ 5.99</span>
-            </div>
+            </section>
           </header>
           <main className="week-specials-description">
             <p>
@@ -52,7 +58,7 @@ const Specials = () => {
             </p>
           </main>
           <footer className="order-for-delivery">
-            <Link to="/order-online">
+            <Link to="/order-online" aria-label="On Click">
               Order a delivery
               <img src={DeliveryScooter} alt="Delivery Scooter" />
             </Link>
@@ -61,10 +67,10 @@ const Specials = () => {
         <article>
           <header>
             <img src={LemonDessert} alt="Lemon Dessert" />
-            <div className="week-specials-title">
+            <section className="week-specials-title">
               <h1>Lemon Dessert</h1>
               <span>$ 5.00</span>
-            </div>
+            </section>
           </header>
           <main className="week-specials-description">
             <p>
@@ -74,7 +80,7 @@ const Specials = () => {
             </p>
           </main>
           <footer className="order-for-delivery">
-            <Link to="/order-online">
+            <Link to="/order-online" aria-label="On Click">
               Order a delivery
               <img src={DeliveryScooter} alt="Delivery Scooter" />
             </Link>

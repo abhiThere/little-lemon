@@ -1,0 +1,14 @@
+.confirmed-booking main {
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.confirmed-booking p{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}

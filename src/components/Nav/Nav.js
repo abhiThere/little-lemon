@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = () => {
@@ -6,22 +6,34 @@ const Nav = () => {
     <nav className="main-navigation">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/" aria-label="On Click">
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about" aria-label="On Click">
+            About
+          </NavLink>
         </li>
         <li>
-          <Link to="/menu">Menu</Link>
+          <NavLink to="/menu" aria-label="On Click">
+            Menu
+          </NavLink>
         </li>
         <li>
-          <Link to="/booking">Reservations</Link>
+          <NavLink to="/booking" aria-label="On Click">
+            Reservations
+          </NavLink>
         </li>
         <li>
-          <Link to="/order-online">Order Online</Link>
+          <NavLink to="/order-online" aria-label="On Click">
+            Order Online
+          </NavLink>
         </li>
         <li>
-          <Link to="/login">Login</Link>
+          <NavLink to="/login" aria-label="On Click">
+            Login
+          </NavLink>
         </li>
       </ul>
     </nav>

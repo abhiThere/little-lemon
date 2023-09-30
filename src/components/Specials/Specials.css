@@ -12,6 +12,17 @@
   font-size: 3.5rem;
 }
 
+.cta-btn {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f4ce14;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
 .week-specials {
   display: flex;
   justify-content: center;

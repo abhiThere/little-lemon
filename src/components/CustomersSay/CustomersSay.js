@@ -13,11 +13,13 @@ const CustomersSay = () => {
       <section className="testimonials">
         <article>
           <header>
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
+            <section className="user-ratings">
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+            </section>
             <section className="user-details">
               <img src={UserMike} alt="User Avatar" />
               <h2>Mike</h2>
@@ -31,10 +33,12 @@ const CustomersSay = () => {
         </article>
         <article>
           <header>
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
+            <section className="user-ratings">
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+            </section>
             <section className="user-details">
               <img src={UserJane} alt="User Avatar" />
               <h2>Jane</h2>
@@ -48,10 +52,12 @@ const CustomersSay = () => {
         </article>
         <article>
           <header>
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
+            <section className="user-ratings">
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+            </section>
             <section className="user-details">
               <img src={UserJake} alt="User Avatar" />
               <h2>Jake</h2>
@@ -60,17 +66,19 @@ const CustomersSay = () => {
           <main>
             <p className="user-comment">
               The food was delicious and the ambience was good. Also, the
-              service is quick.
+              service was quick.
             </p>
           </main>
         </article>
         <article>
           <header>
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
-            <img className="user-rating" src={RatingStar} alt="Rating Star" />
+            <section className="user-ratings">
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+              <img src={RatingStar} alt="Rating Star" />
+            </section>
             <section className="user-details">
               <img src={UserSally} alt="User Avatar" />
               <h2>Sally</h2>
@@ -78,7 +86,7 @@ const CustomersSay = () => {
           </header>
           <main>
             <p className="user-comment">
-              Awesome food and customer service. I will be going again!
+              Awesome food and customer service. I will definitely be going again!
             </p>
           </main>
         </article>

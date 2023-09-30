@@ -14,22 +14,34 @@ const Footer = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" aria-label="On Click">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" aria-label="On Click">
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/menu">Menu</Link>
+              <Link to="/menu" aria-label="On Click">
+                Menu
+              </Link>
             </li>
             <li>
-              <Link to="/booking">Reservations</Link>
+              <Link to="/booking" aria-label="On Click">
+                Reservations
+              </Link>
             </li>
             <li>
-              <Link to="/order-online">Order Online</Link>
+              <Link to="/order-online" aria-label="On Click">
+                Order Online
+              </Link>
             </li>
             <li>
-              <Link to="/login">Login</Link>
+              <Link to="/login" aria-label="On Click">
+                Login
+              </Link>
             </li>
           </ul>
         </nav>
@@ -39,17 +51,25 @@ const Footer = () => {
         <address>
           <ul>
             <li>
-              <Link to="https://goo.gl/maps/fuYL4VJKbDpdwzXWA">
+              <Link
+                to="https://goo.gl/maps/fuYL4VJKbDpdwzXWA"
+                target="_blank"
+                aria-label="On Click"
+              >
                 1132 W Albert Street,
                 <br />
                 Chicago, USA
               </Link>
             </li>
             <li>
-              <Link to="tel:+13107492683">(310) 749-2683</Link>
+              <Link to="tel:+13107492683" aria-label="On Click">
+                (310) 749-2683
+              </Link>
             </li>
             <li>
-              <Link to="mailto:little@lemon.com">little@lemon.com</Link>
+              <Link to="mailto:little@lemon.com" aria-label="On Click">
+                little@lemon.com
+              </Link>
             </li>
           </ul>
         </address>
@@ -59,16 +79,40 @@ const Footer = () => {
         <address>
           <ul>
             <li>
-              <Link to="https://www.facebook.com/">Facebook</Link>
+              <Link
+                to="https://www.facebook.com/"
+                target="_blank"
+                aria-label="On Click"
+              >
+                Facebook
+              </Link>
             </li>
             <li>
-              <Link to="https://www.instagram.com/">Instagram</Link>
+              <Link
+                to="https://www.instagram.com/"
+                target="_blank"
+                aria-label="On Click"
+              >
+                Instagram
+              </Link>
             </li>
             <li>
-              <Link to="https://twitter.com/">Twitter</Link>
+              <Link
+                to="https://twitter.com/"
+                target="_blank"
+                aria-label="On Click"
+              >
+                X
+              </Link>
             </li>
             <li>
-              <Link to="https://www.linkedin.com/">LinkedIn</Link>
+              <Link
+                to="https://www.linkedin.com/"
+                target="_blank"
+                aria-label="On Click"
+              >
+                LinkedIn
+              </Link>
             </li>
           </ul>
         </address>

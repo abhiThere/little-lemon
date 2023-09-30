@@ -1,13 +1,16 @@
 import Header from "../../components/Header/Header";
+import Specials from "../../components/Specials/Specials";
 import Footer from "../../components/Footer/Footer";
+
+import './MenuPage.css'
 
 const MenuPage = () => {
   return (
-    <>
+    <div className="menu-page">
       <Header />
-      <h1 style={{ textAlign: "center", margin: "10rem 0" }}>Menu Page</h1>
+      <Specials />
       <Footer />
-    </>
+    </div>
   );
 };
 

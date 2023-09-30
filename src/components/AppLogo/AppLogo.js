@@ -5,7 +5,7 @@ import "./AppLogo.css";
 
 const AppLogo = () => {
   return (
-    <Link to="/">
+    <Link to="/" aria-label="On Click">
       <img className="app-logo" src={Logo} alt="Little Lemon Logo" />
     </Link>
   );
