@@ -29,7 +29,11 @@ const CallToAction = () => {
           </p>
         </main>
         <footer>
-          <button className="cta-btn" aria-label="On Click" onClick={handleTableReservation}>
+          <button
+            className="cta-btn"
+            aria-label="On Click"
+            onClick={handleTableReservation}
+          >
             Reserve a table
           </button>
         </footer>

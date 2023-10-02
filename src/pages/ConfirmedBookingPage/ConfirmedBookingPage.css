@@ -4,11 +4,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
-.confirmed-booking p{
-    font-family: 'Karla', sans-serif;
-    font-weight: bold;
-    font-size: x-large;
+.submission-feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmed-booking p {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
 }

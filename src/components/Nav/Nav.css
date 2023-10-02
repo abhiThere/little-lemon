@@ -15,8 +15,8 @@
 }
 
 .main-navigation a.active {
-  color: #f0f414;
-  background-color: #495e57;
+  color: #edefee;
+  background-color: #333333;
   padding: 0.3rem 0.5rem;
   border-radius: 50px;
 }

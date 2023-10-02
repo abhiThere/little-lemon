@@ -22,4 +22,4 @@ export const fetchAPI = date => {
 };
 
 export const submitAPI = formData =>
-  formData && formData.date.length > 0 && formData.time.length > 0;
+  formData && formData.date.length > 0 && formData.guests.length > 0;

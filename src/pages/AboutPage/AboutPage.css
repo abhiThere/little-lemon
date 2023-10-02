@@ -1,0 +1,28 @@
+.about-page .chicago {
+  height: calc(100vh - 70px - 215px);
+  color: white;
+  background-color: #495e57;
+  padding: 3rem 0;
+}
+
+.about-page .chicago h1 {
+  color: #f4ce14;
+  font-size: 3.5rem;
+}
+
+.about-page .chicago h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.about-page .chicago p {
+  font-size: 1.15rem;
+}
+
+.about-page .chicago img {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-page .main-footer{
+  padding: 2rem 0;
+}

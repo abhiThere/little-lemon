@@ -1,14 +1,19 @@
 import { useState } from "react";
 import Bookings from "./Bookings/Bookings";
+import Restaurant from "../../assets/images/restaurant.jpg";
+import SeasoningDish from "../../assets/images/seasoning-dish.jpg";
+import WarningIcon from "../../assets/icons/warning.png";
+import AsteriskIcon from "../../assets/icons/asterisk.png";
 
 import "./BookingForm.css";
 
 export const getInitialDate = () => {
   const initialDate = new Date().toLocaleDateString("en-IN", {
-    day: "numeric",
+    day: "2-digit",
     month: "2-digit",
     year: "numeric",
   });
+
   const formattedDate = initialDate.split("/").reverse().join("-");
   return formattedDate;
 };
@@ -103,15 +108,26 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
       <header>
         <h1>Book a table</h1>
         <p>Find a table for any occasion</p>
+        <section className="restaurant-images">
+          <img src={Restaurant} alt="restaurant ambience" />
+          <img src={SeasoningDish} alt="adrian seasoning a dish" />
+        </section>
       </header>
       <main>
-        <em className="required-fields">
-          <span>*</span> indicates required fields.
-        </em>
+        <div className="required-fields">
+          <em>
+            <img src={AsteriskIcon} alt="asterisk icon" id="asterisk" />indicates required fields.
+          </em>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className="form-field">
             <label htmlFor="res-date">
-              Choose date<span className="asterisk">*</span>
+              Choose date
+              <img
+                src={AsteriskIcon}
+                alt="asterisk icon"
+                className="asterisk-icon"
+              />
             </label>
             <input
               type="date"
@@ -121,11 +137,21 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
               onChange={handleDateChange}
               required
             />
-            {!date.isValid && <p className="error">Please select a date.</p>}
+            {!date.isValid && (
+              <div className="warning">
+                <img src={WarningIcon} alt="warning icon" />
+                <p className="error">Please select a date.</p>
+              </div>
+            )}
           </div>
           <div className="form-field">
             <label htmlFor="res-time">
-              Choose time<span className="asterisk">*</span>
+              Choose time
+              <img
+                src={AsteriskIcon}
+                alt="asterisk icon"
+                className="asterisk-icon"
+              />
             </label>
             <select
               id="res-time"
@@ -139,7 +165,12 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
           </div>
           <div className="form-field">
             <label htmlFor="guests">
-              Number of guests<span className="asterisk">*</span>
+              Number of guests
+              <img
+                src={AsteriskIcon}
+                alt="asterisk icon"
+                className="asterisk-icon"
+              />
             </label>
             <input
               type="number"
@@ -153,12 +184,20 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
               required
             />
             {!guests.isValid && (
-              <p className="error">Please enter a number between 1 and 10.</p>
+              <div className="warning">
+                <img src={WarningIcon} alt="warning icon" />
+                <p className="error">Please enter a number between 1 and 10.</p>
+              </div>
             )}
           </div>
           <div className="form-field">
             <label htmlFor="occasion">
-              Occasion<span className="asterisk">*</span>
+              Occasion
+              <img
+                src={AsteriskIcon}
+                alt="asterisk icon"
+                className="asterisk-icon"
+              />
             </label>
             <select
               id="occasion"

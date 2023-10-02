@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
 import AppLogo from "../AppLogo/AppLogo";
+import LocationIcon from "../../assets/icons/location.png";
+import PhoneIcon from "../../assets/icons/phone.png";
+import EmailIcon from "../../assets/icons/email.png";
+import FacebookLogo from "../../assets/icons/facebook.png";
+import InstagramLogo from "../../assets/icons/instagram.png";
+import XLogo from "../../assets/icons/x.png";
+import LinkedInLogo from "../../assets/icons/linkedin.png";
 
 import "./Footer.css";
 
@@ -34,12 +41,12 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/order-online" aria-label="On Click">
+              <Link to="/" aria-label="On Click">
                 Order Online
               </Link>
             </li>
             <li>
-              <Link to="/login" aria-label="On Click">
+              <Link to="/" aria-label="On Click">
                 Login
               </Link>
             </li>
@@ -56,18 +63,33 @@ const Footer = () => {
                 target="_blank"
                 aria-label="On Click"
               >
+                <img
+                  src={LocationIcon}
+                  alt="location icon"
+                  className="contact-icon"
+                />
                 1132 W Albert Street,
                 <br />
-                Chicago, USA
+                <span id="location">Chicago, USA</span>
               </Link>
             </li>
             <li>
               <Link to="tel:+13107492683" aria-label="On Click">
+                <img
+                  src={PhoneIcon}
+                  alt="phone icon"
+                  className="contact-icon"
+                />
                 (310) 749-2683
               </Link>
             </li>
             <li>
               <Link to="mailto:little@lemon.com" aria-label="On Click">
+                <img
+                  src={EmailIcon}
+                  alt="email icon"
+                  className="contact-icon"
+                />
                 little@lemon.com
               </Link>
             </li>
@@ -84,6 +106,11 @@ const Footer = () => {
                 target="_blank"
                 aria-label="On Click"
               >
+                <img
+                  src={FacebookLogo}
+                  alt="facebook logo"
+                  className="contact-icon"
+                />
                 Facebook
               </Link>
             </li>
@@ -93,6 +120,11 @@ const Footer = () => {
                 target="_blank"
                 aria-label="On Click"
               >
+                <img
+                  src={InstagramLogo}
+                  alt="instagram logo"
+                  className="contact-icon"
+                />
                 Instagram
               </Link>
             </li>
@@ -102,7 +134,7 @@ const Footer = () => {
                 target="_blank"
                 aria-label="On Click"
               >
-                X
+                <img src={XLogo} alt="x logo" className="contact-icon" />X
               </Link>
             </li>
             <li>
@@ -111,6 +143,11 @@ const Footer = () => {
                 target="_blank"
                 aria-label="On Click"
               >
+                <img
+                  src={LinkedInLogo}
+                  alt="linkedin logo"
+                  className="contact-icon"
+                />
                 LinkedIn
               </Link>
             </li>

@@ -2,6 +2,7 @@ import GreekSalad from "../../assets/images/greek-salad.jpg";
 import Bruschetta from "../../assets/images/bruschetta.jpg";
 import LemonDessert from "../../assets/images/lemon-dessert.jpg";
 import DeliveryScooter from "../../assets/icons/delivery-scooter.svg";
+import Tray from "../../assets/icons/tray.png";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -15,8 +16,14 @@ const Specials = () => {
   return (
     <section className="specials">
       <header>
+        <img src={Tray} alt="tray" className="tray" />
         <h1>This week's specials!</h1>
-        <button className="cta-btn" aria-label="On Click" onClick={handleOnlineMenu}>
+        <img src={Tray} alt="tray" className="tray" />
+        <button
+          className="cta-btn"
+          aria-label="On Click"
+          onClick={handleOnlineMenu}
+        >
           Online Menu
         </button>
       </header>
@@ -37,7 +44,7 @@ const Specials = () => {
             </p>
           </main>
           <footer className="order-for-delivery">
-            <Link to="/order-online" aria-label="On Click">
+            <Link to="/" aria-label="On Click">
               Order a delivery
               <img src={DeliveryScooter} alt="Delivery Scooter" />
             </Link>
@@ -58,7 +65,7 @@ const Specials = () => {
             </p>
           </main>
           <footer className="order-for-delivery">
-            <Link to="/order-online" aria-label="On Click">
+            <Link to="/" aria-label="On Click">
               Order a delivery
               <img src={DeliveryScooter} alt="Delivery Scooter" />
             </Link>
@@ -80,7 +87,7 @@ const Specials = () => {
             </p>
           </main>
           <footer className="order-for-delivery">
-            <Link to="/order-online" aria-label="On Click">
+            <Link to="/" aria-label="On Click">
               Order a delivery
               <img src={DeliveryScooter} alt="Delivery Scooter" />
             </Link>

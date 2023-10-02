@@ -1,3 +1,33 @@
-.menu-page .cta-btn{
-    display: none;
+.menu-page .tray{
+  display: block;
+}
+
+.menu-page .cta-btn {
+  display: none;
+}
+
+.menu-page .specials {
+  background-color: #495e57;
+  height: calc(130vh - 70px - 210px);
+}
+
+.menu-page .specials > header{
+  gap: 20px;
+}
+
+.menu-page .specials header > h1 {
+  color: white;
+}
+
+.menu-page .week-specials{
+  gap: 40px;
+}
+
+.menu-page .week-specials article{
+    scale: 1.1;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.menu-page .main-footer{
+  padding: 2rem 0;
 }

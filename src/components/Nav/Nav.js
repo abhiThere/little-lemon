@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = () => {
@@ -26,14 +26,14 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/order-online" aria-label="On Click">
+          <Link to="/" aria-label="On Click">
             Order Online
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink to="/login" aria-label="On Click">
+          <Link to="/" aria-label="On Click">
             Login
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>
